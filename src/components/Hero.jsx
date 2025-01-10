@@ -59,9 +59,9 @@ function Hero() {
     <div className="relative min-h-screen  overflow-hidden">
       {/* Floating elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 left-1/4 w-20 h-20 bg-white rounded-full blur-2xl opacity-20 animate-float"></div>
-        <div className="absolute top-1/3 right-1/3 w-32 h-32 bg-white rounded-full blur-2xl opacity-20 animate-float-delayed"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-24 h-24 bg-white rounded-full blur-2xl opacity-20 animate-float"></div>
+        <div className="absolute top-1/4 right-1/4 w-20 h-20 bg-white rounded-full blur-2xl opacity-20 animate-float"></div>
+        <div className="absolute top-1/3 left-1/3 w-32 h-32 bg-white rounded-full blur-2xl opacity-20 animate-float-delayed"></div>
+        <div className="absolute bottom-1/4 left-1/4 w-24 h-24 bg-white rounded-full blur-2xl opacity-20 animate-float"></div>
       </div>
 
       {/* Hero content */}

@@ -25,7 +25,7 @@ const components = [
   {
     title: "Blogs",
     href: "/docs/primitives/hover-card",
-    description: "Tips and tricks that you might not find on StackOverflow"
+    description: "Tips and tricks that you might not find on StackOverflow ;)"
   },
   {
     title: "Pricings",
