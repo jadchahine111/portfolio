@@ -6,11 +6,14 @@ import Experience from './components/Experience'
 import Projects from './components/Projects'
 import Pricing from './components/Pricing'
 import Contact from './components/Contact'
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
       <main className="min-h-screen">
-        <Navigation />
+        <BrowserRouter>
+          <Navigation />
+        </BrowserRouter>
         <Hero />
         <About />
         <Experience />
