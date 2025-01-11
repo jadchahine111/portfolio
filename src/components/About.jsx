@@ -83,7 +83,10 @@ function About() {
           "",
           "Software Developer | Ministry of Labor | January 2024 - August 2024",
           "- Developed a Document Management System for the Ministry of Labor using PHP and MySQL",
-          "- Received formal recognition from the minister of labor for my efforts in developing the software"
+          "- Received formal recognition from the minister of labor for my efforts in developing the software",
+          "",
+          "Flutter Developer Intern| XperBot | April 2024 - July 2024",
+          "- Developed Flutter applications utilizing the MVC architecture with Dio for API integration and Laravel as the backend."
         ]
         break
       case "bio":
@@ -129,7 +132,7 @@ function About() {
   }
 
   return (
-    <section className="relative text-white overflow-hidden px-4 py-8 sm:py-12 md:py-16">
+    <section className="relative text-white overflow-hidden px-4 py-8 sm:py-12 md:py-16 min-h-screen">
       <div className="relative max-w-7xl mx-auto z-10">
         <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-start">
           <div className="mb-8 sm:mb-12 md:mb-16 lg:mb-0">

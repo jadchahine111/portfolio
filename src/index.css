@@ -109,3 +109,16 @@ body {
   }
 }
 
+.neon-border {
+  background: linear-gradient(45deg, #ff00cc, #3333ff, #00ffcc, #ffcc00);
+  background-size: 300% 300%;
+  animation: neon-snake 3s linear infinite;
+  border-radius: 8px; /* Matches Card border-radius */
+  padding: 2px; /* Creates the border effect */
+}
+
+.neon-border .card {
+  background-color: var(--tw-bg-card, #ffffff); /* Tailwind's card background */
+  border-radius: inherit;
+  overflow: hidden;
+}
