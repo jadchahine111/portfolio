@@ -7,6 +7,7 @@ import Projects from './components/Projects'
 import Pricing from './components/Pricing'
 import Contact from './components/Contact'
 import { BrowserRouter } from "react-router-dom";
+import CTA from './components/CTA'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Projects />
         <Pricing />
         <Contact />
+        <CTA />
       </main>
   )
 }
