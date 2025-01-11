@@ -70,7 +70,7 @@ const ProjectCard = ({ project }) => {
 
 const Projects = () => {
   return (
-    <section className="py-16 px-4 md:px-8 relative overflow-hidden">
+    <section className="py-16 px-4 md:px-8 relative overflow-hidden min-h-screen">
       {/* Background elements */}
       <div className="absolute inset-0 bg-gradient-to-b from-background via-background to-background/0 pointer-events-none" />
       <div className="absolute top-1/4 -left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl opacity-20" />
