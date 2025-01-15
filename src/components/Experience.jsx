@@ -30,7 +30,7 @@ const experiences = [
   {
     title: "Flutter Developer (Intern)",
     company: "XperBot",
-    period: "2016 - 2018",
+    period: "April 2024 - July 2024",
     description:
       "Developed Flutter applications utilizing the MVC architecture with Dio for API integration and Laravel as the backend.",
     skills: ["Flutter", "Laravel"]

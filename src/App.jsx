@@ -8,6 +8,7 @@ import Pricing from './components/Pricing'
 import Contact from './components/Contact'
 import { BrowserRouter } from "react-router-dom";
 import CTA from './components/CTA'
+import MobileUI from './components/MobileUI'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Hero />
         <About />
         <Experience />
+        <MobileUI />
         <Projects />
         <Pricing />
         <Contact />
