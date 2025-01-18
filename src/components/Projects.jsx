@@ -1,7 +1,7 @@
 "use client"
 
 import React from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
@@ -32,14 +32,21 @@ const projects = [
     githubLink: "https://github.com/yourusername/task-management",
     liveLink: "https://task-management-demo.com"
   },
-  // Add more projects here...
+  {
+    title: "Smart Home IoT Dashboard",
+    description: "A comprehensive dashboard for managing and monitoring smart home devices.",
+    image: "/placeholder.svg?height=300&width=400",
+    tags: ["React", "Node.js", "MQTT", "InfluxDB"],
+    githubLink: "https://github.com/yourusername/smart-home-dashboard",
+    liveLink: "https://smart-home-demo.com"
+  },
 ]
 
 const ProjectCard = ({ project }) => {
   return (
     <Card className="flex flex-col h-full overflow-hidden bg-card/50 backdrop-blur-sm border border-primary/10 hover:border-primary/30 transition-all duration-300">
       <CardHeader className="p-0">
-        <img src={project.image} alt={project.title} className="w-full h-48 object-cover" />
+        <img src={project.image || "/placeholder.svg"} alt={project.title} className="w-full h-48 object-cover" />
       </CardHeader>
       <CardContent className="p-6 flex-grow">
         <CardTitle className="text-2xl font-bold mb-2">{project.title}</CardTitle>
@@ -94,26 +101,36 @@ const Projects = () => {
           Showcasing my best work and technical expertise
         </motion.p>
 
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5 }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
-        >
-          {projects.map((project, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-            >
-              <ProjectCard project={project} />
-            </motion.div>
-          ))}
-        </motion.div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+          <div className="space-y-8">
+            {projects.filter((_, index) => index % 2 === 0).map((project, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+              >
+                <ProjectCard project={project} />
+              </motion.div>
+            ))}
+          </div>
+          <div className="space-y-8 md:mt-24">
+            {projects.filter((_, index) => index % 2 !== 0).map((project, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+              >
+                <ProjectCard project={project} />
+              </motion.div>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   )
 }
 
 export default Projects
+

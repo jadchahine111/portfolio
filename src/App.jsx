@@ -9,6 +9,7 @@ import Contact from './components/Contact'
 import { BrowserRouter } from "react-router-dom";
 import CTA from './components/CTA'
 import MobileUI from './components/MobileUI'
+import Skills from './components/Skills'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         </BrowserRouter>
         <Hero />
         <About />
+        <Skills />
         <Experience />
         <MobileUI />
         <Projects />
